@@ -1,0 +1,84 @@
+/* Todo el html y el body tendrán este estilo
+	No tendrá margen y usará el mismo tipo de letra
+*/
+
+html,body{
+	margin: 0px;
+	font-family: 'Inconsolata' ;
+}
+
+/*Los link no cambiaran de color ni estarán
+  subrayados. Estilo para etiqueta a y a:visited
+*/
+
+a,a:visited{
+	color: inherit !important;
+	text-decoration: none;
+}
+
+/*Quitar los puntos a los elementos de una lista*/
+
+ul{
+	list-style: none;
+}
+
+/*Para el boton de new*/
+.btn{
+	background-color: inherit;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 1.2em
+}
+
+.red{
+	color: #E74C3C !important;
+}
+
+/*Sin margen*/
+.no-margin{
+	margin: 0px;
+}
+
+/*Color "rojo" sacado de una paleta de colores*/
+.be-red{
+	background-color: #E74C3C;
+}
+
+/*Color "blanco" sacado de la paleta de colores*/
+.white{
+	color: #ECF0F1;
+}
+
+/*Cambiando el tamaño del padding*/
+.large-padding{
+	padding: 5px 10px;
+}
+
+.top-space{
+	margin-top: 1em;
+}
+
+/*Para el formulario de articles/new */
+.field{
+	margin-top: 1em;
+}
+
+.form-control{
+	border: none;
+	border-bottom: 1px solid;
+	outline: none;
+	width: 100%;
+	display: block;
+	padding: 10px 0px;
+	font-size: 1.2em;
+}
+
+.text-left{
+	text-align: left
+}
+
+.actions{
+	margin-top:1em;
+}

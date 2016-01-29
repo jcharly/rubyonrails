@@ -1,0 +1,20 @@
+<h1><%= @article.title %></h1>
+
+<%unless @article.user.nil? %>
+<p>
+	Escrito por: <%= @article.user.email %>
+</p>
+<%end%>
+
+<p>
+	Número de visitas: <%= @article.visit_count %>
+</p>
+
+<div>
+	<%= @article.body %>
+</div>
+
+<div>
+	<%= link_to "Editar", edit_article_path(@article)%>
+	<%= link_to "Regresar", articles_path%>
+</div>
